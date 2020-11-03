@@ -95,20 +95,24 @@ $(document).ready(function () {
     // >>>>> FINE ESERCIZIO BONUS PARTE 2 <<<<<<<
 
   }
+
   //>>>>>>>>>>>>>>>>>ESERCIZIO BONUS 2 <<<<<<<<<<<<<<<<<<
 
+  // creo funzione per cliccare sui circle ed associare l'img al click
   $("i.fa-circle").click(function () {
-    $(".nav > .active").removeClass("active");
-    $(this).addClass("active");
-    var clicked = $(this).index();
-    console.log(clicked);
-    $("img.active").removeClass("active");
-    var imgSelect = $(".images > img");
-    imgSelect = imgSelect.index();
-    imgSelect = clicked;
-    console.log(imgSelect);
-    // imgSelect.addClass("active");
+
+    $(".nav > .active").removeClass("active");// tolgo la classe active al circle che l'aveva
+    $(this).addClass("active");//do la classe active al preciso elemento cliccato
+    var clicked = $(this).index(); // dichiaro una variabile che avrà il valore index di quello che ho cliccato
+    $("img.active").removeClass("active"); //tolgo la classe active all'img che l'aveva
+    var imgSelect = $(".images > img"); // dichiaro una variabile con valore uguale elemento img
+    var imgShow = "img:nth-child(" + (clicked + 1) + ")"; // creo variabile che avrà valore uguale ai figli di img con valore index del circle cliccato
+    $(imgShow).addClass("active"); // aggiungo classe all'immagine trovata nella riga precedente
+
   })
 
+   //>>>>>>>>>>>>>>>>>FINE ESERCIZIO BONUS 2 <<<<<<<<<<<<<<<<<<
 
-  });
+
+
+}); // fine document ready
