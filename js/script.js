@@ -10,6 +10,17 @@ $(document).ready(function () {
   $(".next").click(nextImg);
   $(".prev").click(prevImg);
 
+  // --------- Utilizzo la funzione keydown con una condizione associata al tasto sinitro e destro che corrispondo al keycode 39 e 37.
+  // se l'evento del keypress == 39 il programma riconosce che ho premuto il tasto destro e richiamerò la funzione nextImg,stessa cosa per il tasto sinistro richiamerò la funzione prevImg
+
+  $(document).keydown(function(press) {
+     if (event.keyCode == 39) {
+         nextImg()
+     } else if (event.keyCode == 37) {
+         prevImg();
+     }
+ });
+
   //FUNZIONI
 
   // funzione per il tasto NEXT
