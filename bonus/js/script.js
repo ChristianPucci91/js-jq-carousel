@@ -96,9 +96,18 @@ $(document).ready(function () {
 
   }
   //>>>>>>>>>>>>>>>>>ESERCIZIO BONUS 2 <<<<<<<<<<<<<<<<<<
+
   $("i.fa-circle").click(function () {
-  $(".nav > .active").removeClass("active");
-  $(this).addClass("active");
+    $(".nav > .active").removeClass("active");
+    $(this).addClass("active");
+    var clicked = $(this).index();
+    console.log(clicked);
+    $("img.active").removeClass("active");
+    var imgSelect = $(".images > img");
+    imgSelect = imgSelect.index();
+    imgSelect = clicked;
+    console.log(imgSelect);
+    // imgSelect.addClass("active");
   })
 
 
