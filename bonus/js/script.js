@@ -3,13 +3,10 @@
 // Utiliziamo una classe first e last  per capire quali sono la prima e ultima immagine dello slider
 // Utilizziamo una classe active per aiutarci a capire quale è l’immagine attuale da visualizzare nello slider
 
-
-  // >>>>>>>>>>>>>>>> BONUS <<<<<<<<<<<<<<<<<<<<<<<
-
- //  Bonus:
- // i pallini si evidenziano in accordo alla img corrispondente
- // Clicchiamo sui pallini e mostriamo l’immagine corrispondente
- // altro esempio: Generiamo i pallini con JS (ma quello che volete liberamente)
+// Bonus:
+// i pallini si evidenziano in accordo alla img corrispondente
+// Clicchiamo sui pallini e mostriamo l’immagine corrispondente
+// altro esempio: Generiamo i pallini con JS (ma quello che volete liberamente)
 
 // >>>>>>>>>>>>>>>>> INIZIO ESERCIZIO <<<<<<<<<<<<<<<<<<<<
 
@@ -94,7 +91,7 @@ $(document).ready(function () {
     }else {
      circleActive.prev("i").addClass("active");
     }
-    
+
     // >>>>> FINE ESERCIZIO BONUS PARTE 2 <<<<<<<
 
   }
