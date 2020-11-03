@@ -95,5 +95,11 @@ $(document).ready(function () {
     // >>>>> FINE ESERCIZIO BONUS PARTE 2 <<<<<<<
 
   }
+  //>>>>>>>>>>>>>>>>>ESERCIZIO BONUS 2 <<<<<<<<<<<<<<<<<<
+  $("i.fa-circle").click(function () {
+  $(".nav > .active").removeClass("active");
+  $(this).addClass("active");
+  })
+
 
   });
